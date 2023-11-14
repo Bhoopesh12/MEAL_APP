@@ -1,0 +1,170 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Source Sans Pro", "Arial", sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+
+/* header heading section */
+#heading {
+    margin-top: 100px;
+}
+#heading:hover {
+    color: orangered;
+}
+
+/* header navbar */
+#nav {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow: hidden;
+}
+.navbar-heading {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: inline;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+	min-width: 60px;
+    max-width: 100%;
+    max-height: 100%;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: lightgray 0px 0px 5px 0px;
+	border: 2px solid white;
+	background-image: url("icon.png");
+    display: inline;
+    background-position: center;
+    object-fit: contain;
+	transition: box-shadow 0.3s linear, border 0.3s linear;  
+}
+.logo:hover {
+	box-shadow: orangered 0px 0px 5px 2px;
+	border: 2px solid orangered;
+	animation: rotate 1.3s linear infinite;
+}
+
+/*--Animation ---*/
+@keyframes rotate {
+	0% {
+		transform: rotate(-360deg);
+	}
+}
+
+div.container-fluid > div.modeChange .fa-sun,
+div.container-fluid > div.modeChange .fa-moon {
+    font-size : 1.5rem;
+    position: relative;
+    margin-left: 1180px;
+    cursor: pointer;
+	display: none;
+}
+
+div.container-fluid > div.modeChange .fa-sun,
+div.container-fluid > div.modeChange .fa-moon {
+	animation: topToBottom 0.5s linear;
+	display: block;
+}
+#hide {
+    display: none;
+}
+
+
+/* ---Animation ---*/
+@keyframes topToBottom {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/* header search bar section */
+#search-bar {
+    max-width: 600px;
+    
+}
+
+
+#search-bar input {
+    height: 50px;
+    border-radius: 20px;
+}
+
+#heading-text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#heading-text:hover {
+    color: orangered;
+}
+
+
+/* meal card */
+#card {
+    background-color: #3B71CA;
+    padding: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+#card:hover {
+    
+    background-color: #54B4D3;
+    box-shadow:  #54B4D3 0px 0px 10px 1px;
+}   
+
+#card img {
+    border-radius: 50%;
+}
+
+
+/* meal details container */
+#meal-details{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #3B71CA ;
+    color: white;
+}
+#meal-header{
+    width: 70%;
+    margin: auto;
+}
+#meal-thumbail img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+#meal-instruction {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
